@@ -60,8 +60,17 @@ var crayola1990 = [
 
 //create a loop that will iterate over each item in the array and then use the String methods to modify the value at the current position in the array
 
+for (var i = 0; i < crayola1990.length; i++){
+	crayola1990[i] = crayola1990[i].replace(/ /g, "-");
+	crayola1990[i] = crayola1990[i].toLowerCase();	
+}
+
+//or another way to replace.... (not understood)
+// crayola1990 = crayola1990.map(function(x){ return / /g.test(x) ? x.replace(/ /g,"-") : x });
+
 /***** HINTS *******
  * remember strings are immutable but the value of a variable can be adjusted as often as needed.
  * take advantage of the methods available on stings http://www.w3schools.com/js/js_string_methods.asp
  * there are multiple ways to do something like this but you might consider using split and join
  */ 
+ console.log(crayola1990);
