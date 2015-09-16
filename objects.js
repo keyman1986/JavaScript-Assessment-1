@@ -14,4 +14,13 @@ console.log(me);
 
 //2. Iterate over the object to console.log the propery or key names. 
 
-//please rephrase the question!!!!
+
+// this is a for in loop - for looping objects.
+// logs keys or properties
+for (var key in me){
+	console.log(key);
+}
+
+// logs values
+for (var key in me){
+	console.log(me[key]);

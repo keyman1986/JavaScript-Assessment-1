@@ -4,11 +4,15 @@ var string8 = '8';
 var one = 1;
 var total = 0;
 
-function addVars(a,b,c){
-    total = +a + +b + +c;
-    console.log("Your total is " + total);
-}
-addVars(num10,string8,one);
+// parse int?
+var sum = num10 + Number(string8) + one;
+console.log(sum);
+
+// function addVars(a,b,c){
+//     total = +a + +b + +c;
+//     console.log("Your total is " + total);
+// }
+// addVars(num10,string8,one);
 
 //2. write a loop that will log only numbers divisible by 3 between 20 - 100
 for (var i = 100; i > 20; i--){
